@@ -1,0 +1,13 @@
+Created end to end applicaton
+
+I don't have GCP or AWS because(i don't have Credit card)
+So unable to deployed on AWS, GCP
+
+so please accept this
+But i deployed using flask.
+
+To run:
+
+python app.py
+
+run this on command prompt
