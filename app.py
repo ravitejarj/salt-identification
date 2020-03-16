@@ -77,16 +77,16 @@ def uploader():
       f.save(os.path.join(app.config['UPLOAD_FOLDER'],"test_image.png"))
       
    #Loading the image
-   ids = ['test_image.png']
-   X = np.zeros((1, 128, 128, 1),dtype=np.float32)
-   for n, id_ in tqdm_notebook(enumerate(ids),total=len(ids)):
-      img  = load_img(path + '/images/' + id_, grayscale=True)
-      x_img = img_to_array(img)
-      x_img = resize(x_img, (128,128,1), mode='constant', preserve_range=True)
-      X[n,...,0] = x_img.squeeze()/255
+   #ids = ['test_image.png']
+   #X = np.zeros((1, 128, 128, 1),dtype=np.float32)
+   #for n, id_ in tqdm_notebook(enumerate(ids),total=len(ids)):
+   #   img  = load_img(path + '/images/' + id_, grayscale=True)
+   #   x_img = img_to_array(img)
+   #   x_img = resize(x_img, (128,128,1), mode='constant', preserve_range=True)
+   #   X[n,...,0] = x_img.squeeze()/255
       
    #Predicting the image
-   pred_image(X)
+   #pred_image(X)
       
    #Return    
    return render_template("home.html", msg="completed")
