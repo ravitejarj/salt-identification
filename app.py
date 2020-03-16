@@ -71,9 +71,10 @@ def imgs_save(imgs, pred, pred_b):
 #Main method
 @app.route('/uploader', methods = ['GET', 'POST'])
 def uploader():
-   #Saving image     
-   f = request.files['file']
-   f.save(os.path.join(app.config['UPLOAD_FOLDER'],"test_image.png"))
+   if request.method == 'POST':
+      #Saving image     
+      f = request.files['file']
+      f.save(os.path.join(app.config['UPLOAD_FOLDER'],"test_image.png"))
       
    #Loading the image
    ids = ['test_image.png']
