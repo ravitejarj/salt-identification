@@ -5,7 +5,7 @@ keras==2.2.5
 scikit-learn==0.20.1
 pandas==0.24.1
 tensorflow==1.14.0
-Jinja2==2.10
+Jinja2==2.11.3
 Werkzeug==0.15.6
 itsdangerous==1.1.0
 Markupsafe==1.1.0
